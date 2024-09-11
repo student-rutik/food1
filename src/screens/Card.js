@@ -18,7 +18,7 @@ export default function Cart() {
       let userEmail = localStorage.getItem("userEmail");
       console.log("User Email:", userEmail); // Check this value
   
-      let response = await fetch("https://food-o9yj.onrender.com/api/orderData", {
+      let response = await fetch("http://localhost:5000/api/orderData", {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
